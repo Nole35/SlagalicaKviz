@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".KoZnaZna">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_1Game_5"
+                style="@style/SmallHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <Button
+                android:id="@+id/button_1Game_5"
+                style="@style/ButtonStyleForGames"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="tryAnswerClick" />
+
+            <Button
+                android:id="@+id/button_2Game_5"
+                style="@style/ButtonStyleForGames"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="tryAnswerClick" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_3Game_5"
+                style="@style/ButtonStyleForGames"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="tryAnswerClick" />
+
+
+
+            <Button
+                android:id="@+id/button_4Game_5"
+                style="@style/ButtonStyleForGames"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="tryAnswerClick" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_5Game_5"
+            style="@style/ButtonStyleForGames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="450dp"
+            android:onClick="nextQuestionClick"
+            android:text="@string/nextQuestion" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
