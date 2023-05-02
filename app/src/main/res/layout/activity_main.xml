@@ -9,14 +9,10 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="319dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTitle1"
-        app:layout_constraintVertical_bias="0.377">
+        tools:ignore="MissingConstraints">
 
 
     </LinearLayout>
@@ -25,9 +21,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/logos"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="481dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="511dp" />
 
     <Button
         android:id="@+id/buttonMultiplayer"
@@ -40,19 +36,19 @@
 
     <Button
         style="@style/ButtonStyleMainMenu"
-        android:layout_width="157dp"
-        android:layout_height="59dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:onClick="startSettings"
         android:text="@string/prikaz"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="3dp"
-        tools:ignore="MissingConstraints,OnClick" />
+        tools:ignore="MissingConstraints,OnClick"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="90dp" />
 
     <TextView
         android:id="@+id/textViewTitle1"
         style="@style/BigHeader"
         android:text="@string/slagalica"
-        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteX="30"
         tools:layout_editor_absoluteY="309dp"
         tools:ignore="MissingConstraints" />
 
@@ -61,9 +57,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
-        tools:layout_editor_absoluteX="252dp"
-        tools:layout_editor_absoluteY="19dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="277dp"
+        tools:layout_editor_absoluteY="19dp" />
 
     <Button
         android:id="@+id/registracijaBtn"

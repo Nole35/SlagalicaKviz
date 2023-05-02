@@ -84,9 +84,9 @@
     <string name="playerFirebase">player</string>
     <string name="name">Име:&#160;</string>
     <string name="lastname">Презиме:&#160;</string>
-    <string name="username">Корисничко име:&#160;</string>
-    <string name="name_">Име</string>
-    <string name="lastname_">Презиме</string>
+    <string name="username">Korisnicko ime</string>
+    <string name="name_">Korisnicko Ime</string>
+    <string name="email">E-mail</string>
     <string name="username_">Корисничко име</string>
     <string name="search">Претражи…</string>
     <string name="challenge">Изазови</string>

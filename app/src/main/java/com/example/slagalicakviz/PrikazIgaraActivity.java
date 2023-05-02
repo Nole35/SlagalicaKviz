@@ -45,5 +45,34 @@ public class PrikazIgaraActivity extends AppCompatActivity {
             }
         });
 
+        Button buttonAsocijacije = findViewById(R.id.buttonAsocijacije);
+        buttonAsocijacije.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PrikazIgaraActivity.this,Asocijacije.class);
+                startActivity(intent);
+            }
+        });
+
+        Button buttonKoZnaZna = findViewById(R.id.buttonKoZnaZna);
+        buttonKoZnaZna.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PrikazIgaraActivity.this,KoZnaZna.class);
+                startActivity(intent);
+            }
+        });
+
+        Button buttonSpojnice = findViewById(R.id.buttonSpojnice);
+        buttonSpojnice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PrikazIgaraActivity.this,Spojnice.class);
+                startActivity(intent);
+            }
+        });
+
+
+
     }
 }

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SlagalicaKviz">
         <activity
+            android:name=".PrikazKorisnika"
+            android:exported="false" />
+        <activity
             android:name=".KorakPoKorakActivity"
             android:exported="false" />
         <activity
