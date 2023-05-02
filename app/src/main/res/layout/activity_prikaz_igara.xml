@@ -49,8 +49,8 @@
         android:layout_height="wrap_content"
         android:text="Ko Zna Zna"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="240dp" />
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="319dp" />
 
     <Button
         android:id="@+id/buttonSpojnice"
@@ -60,6 +60,9 @@
         tools:layout_editor_absoluteX="164dp"
         tools:layout_editor_absoluteY="240dp"
         tools:ignore="MissingConstraints" />
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

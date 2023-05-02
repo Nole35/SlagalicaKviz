@@ -41,5 +41,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button button3 = findViewById(R.id.btnprikazKoraisnika);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,PrikazKorisnika.class);
+                startActivity(intent);
+            }
+        });
     }
 }

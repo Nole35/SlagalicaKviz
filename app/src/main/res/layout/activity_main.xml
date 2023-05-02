@@ -7,68 +7,92 @@
     android:background="@color/backgroundColor"
     tools:context=".MainActivity">
 
+
+    <TextView
+        android:id="@+id/textViewTitle1"
+        style="@style/BigHeader"
+        android:layout_marginTop="120dp"
+        android:text="@string/slagalica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
-        android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="6dp">
+
+        <Button
+            android:id="@+id/btnprikazKoraisnika"
+            style="@style/ButtonStyleMainMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startSettings"
+            android:text="@string/prikaz"
+            tools:ignore="MissingConstraints,OnClick"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="192dp" />
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="182dp"
+            tools:layout_editor_absoluteY="283dp" />
+
+        <Button
+            android:id="@+id/registracijaBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registracija"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="252dp"
+            tools:layout_editor_absoluteY="192dp" />
 
 
     </LinearLayout>
 
-    <ImageView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="319dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/logos"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="511dp" />
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle1"
+        app:layout_constraintVertical_bias="0.377">
 
     <Button
         android:id="@+id/buttonMultiplayer"
         style="@style/ButtonStyleMainMenu"
         android:onClick="startMultiPlayer"
         android:text="@string/igra"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="187dp"
-        tools:ignore="MissingConstraints,OnClick" />
-
-    <Button
-        style="@style/ButtonStyleMainMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="startSettings"
-        android:text="@string/prikaz"
         tools:ignore="MissingConstraints,OnClick"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="90dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="386dp" />
 
-    <TextView
-        android:id="@+id/textViewTitle1"
-        style="@style/BigHeader"
-        android:text="@string/slagalica"
-        tools:layout_editor_absoluteX="30"
-        tools:layout_editor_absoluteY="309dp"
-        tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/loginbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
+
+    </LinearLayout>
+
+    <ImageView
+
+        android:src="@drawable/logos"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="277dp"
-        tools:layout_editor_absoluteY="19dp" />
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="511dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"/>
 
-    <Button
-        android:id="@+id/registracijaBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Registracija"
-        tools:layout_editor_absoluteX="255dp"
-        tools:layout_editor_absoluteY="99dp"
-        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
