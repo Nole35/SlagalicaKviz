@@ -6,60 +6,61 @@
     android:layout_height="match_parent"
     tools:context=".PrikazIgaraActivity">
 
-    <Button
-        android:id="@+id/buttonSkocko"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Skocko"
-        android:textColor="#FFFFFF"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="36dp" />
+    <LinearLayout
+        android:layout_width="299dp"
+        android:layout_height="788dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
 
-    <Button
-        android:id="@+id/buttonMojBroj"
-        android:layout_width="100dp"
-        android:layout_height="68dp"
-        android:text="@string/mojBroj"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="43dp" />
 
-    <Button
-        android:id="@+id/buttonKorak"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Korak po korak "
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="133dp" />
+        <Button
+            android:id="@+id/buttonSkocko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Skocko"
+            android:textColor="#FFFFFF"></Button>
 
-    <Button
-        android:id="@+id/buttonAsocijacije"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ASOCIJACIJE"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="147dp" />
 
-    <Button
-        android:id="@+id/buttonKoZnaZna"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ko Zna Zna"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="13dp"
-        tools:layout_editor_absoluteY="319dp" />
+        <Button
+            android:id="@+id/buttonMojBroj"
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:text="@string/mojBroj"></Button>
 
-    <Button
-        android:id="@+id/buttonSpojnice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Spojnice"
-        tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="240dp"
-        tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/buttonKorak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Korak po korak "></Button>
+
+
+        <Button
+            android:id="@+id/buttonAsocijacije"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ASOCIJACIJE"></Button>
+
+
+        <Button
+            android:id="@+id/buttonKoZnaZna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ko Zna Zna"></Button>
+
+
+        <Button
+            android:id="@+id/buttonSpojnice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spojnice"></Button>
+
+
+    </LinearLayout>
+
+
+
+
+
 
 
 
