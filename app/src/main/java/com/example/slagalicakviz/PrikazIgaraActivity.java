@@ -1,7 +1,10 @@
 package com.example.slagalicakviz;
 
+
+
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -32,5 +35,15 @@ public class PrikazIgaraActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+       Button buttonKorakPoKorak = findViewById(R.id.buttonKorak);
+        buttonKorakPoKorak.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PrikazIgaraActivity.this,KorakPoKorakActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

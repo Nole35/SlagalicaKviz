@@ -25,5 +25,14 @@
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="93dp" />
 
+    <Button
+        android:id="@+id/buttonKorak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Korak po korak "
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="192dp"
+        tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
