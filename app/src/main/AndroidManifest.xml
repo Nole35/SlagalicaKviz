@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SlagalicaKviz">
         <activity
+            android:name=".MojBrojActivity"
+            android:exported="false" />
+        <activity
             android:name=".PrikazIgaraActivity"
             android:exported="false" />
         <activity

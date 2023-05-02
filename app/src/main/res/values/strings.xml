@@ -128,5 +128,6 @@
     <string name="password">Password</string>
     <string name="home">Home</string>
     <string name="text">Text</string>
-    <string name="skocko">Skocko</string>
+    <string name="Skocko">Skocko</string>
+    <string name="mojBroj">Moj broj</string>
 </resources>

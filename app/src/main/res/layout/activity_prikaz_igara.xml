@@ -10,9 +10,20 @@
         android:id="@+id/buttonSkocko"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/skocko"
-        android:textColor="white"
+        android:text="@string/Skocko"
+        android:textColor="#FFFFFF"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="36dp" />
+
+    <Button
+        android:id="@+id/buttonMojBroj"
+        android:layout_width="100dp"
+        android:layout_height="68dp"
+        android:text="@string/mojBroj"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="93dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

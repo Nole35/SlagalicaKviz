@@ -22,5 +22,15 @@ public class PrikazIgaraActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        Button buttonMojBroj = findViewById(R.id.buttonMojBroj);
+        buttonMojBroj.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PrikazIgaraActivity.this,MojBrojActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
