@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutSettings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainMenu.Settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/SmallHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/colorBackground"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_1Settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="click"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/button_2Settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="click"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/button_3Settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="click"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/button_4Settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="click"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/button_5Settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="click"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/button_6Settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="click"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_7Settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="click"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/button_8Settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="click"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/button_9Settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="click"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/button_10Settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="click"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/button_11Settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="click"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/button_12Settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="click"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/SmallHeader"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/settingsParameters"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/name"
+                style="@style/SmallHeader"
+                android:layout_gravity="start"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/editTextName"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="#FFFFFF"
+                android:hint="@string/name_"
+                android:text=""
+                tools:ignore="Autofill,TextFields" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/lastname"
+                style="@style/SmallHeader"
+                android:layout_gravity="start"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextLastName"
+                android:textSize="20sp"
+                android:background="#FFFFFF"
+                android:hint="@string/lastname_"
+                android:text=""
+                tools:ignore="Autofill,TextFields" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/username"
+                style="@style/SmallHeader"
+                android:layout_gravity="start"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/editTextUserName"
+                android:background="#FFFFFF"
+                android:hint="@string/username_" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:onClick="apply"
+                    android:background="@drawable/okbutton"
+                    tools:ignore="ButtonStyle" />
+                <Button
+                    style="@style/ButtonStyleForGames"
+                    android:layout_weight="0"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:onClick="check"
+                    android:background="@drawable/field"
+                    android:text="@string/questionMark"
+                    tools:ignore="InefficientWeight" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

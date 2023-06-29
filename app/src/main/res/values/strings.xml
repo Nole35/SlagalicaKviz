@@ -1,14 +1,17 @@
 <resources>
-    <string name="app_name">SlagalicaKviz</string>
-    <string name="slagalica">SLAGALICA</string>
-    <string name="igra">Zapocni igru</string>
+    <string name="app_name">СЛАГАЛИЦА</string>
+    <string name="slagalica">СЛАГАЛИЦА</string>
+    <string name="jedan_igra">Један играч</string>
+    <string name="dva_igra_a">Два играча</string>
     <string name="rang_lista">Ранг листа</string>
-    <string name="prikaz">Prikaz korisnika</string>
+    <string name="pode_avanja">ПОДЕШАВАЊА</string>
     <string name="chat">ЋАСКАЊЕ</string>
+    <string name="powered_by_radoica_nikoli">Powered by Radoica Nikolić</string>
     <string name="moj_broj">МОЈ БРОЈ</string>
     <string name="spojnice">СПОЈНИЦЕ</string>
     <string name="sko_ko">СКОЧКО</string>
     <string name="ko_zna_zna">КО ЗНА ЗНА</string>
+    <string name="korak_po_korak">КОРАК ПО КОРАК</string>
     <string name="asocijacije">АСОЦИЈАЦИЈЕ</string>
     <string name="igre">ИГРЕ</string>
     <string name="questionMark">\?</string>
@@ -22,7 +25,7 @@
     <string name="divideSign">/</string>
     <string name="parenthesisLeft">(</string>
     <string name="parenthesisRight">)</string>
-    <string name="nextQuestion">NE ZNAM</string>
+    <string name="nextQuestion">ДАЉЕ</string>
     <string name="games">Игре</string>
     <string name="sumPoints">Поени: </string>
     <string name="mainPlayer">ВИ</string>
@@ -42,11 +45,11 @@
     <string name="ourSolution">&#160; Наше решење: &#160;</string>
     <string name="transparentColor">#00000000</string>
     <string name="redColor">#FF0000</string>
-    <string name="columnA">А</string>
-    <string name="columnB">B</string>
-    <string name="columnC">C</string>
-    <string name="columnD">D</string>
-    <string name="finalSolution">KONACNO RESENJE</string>
+    <string name="columnA">Колона А</string>
+    <string name="columnB">Колона Б</string>
+    <string name="columnC">Колона Ц</string>
+    <string name="columnD">Колона Д</string>
+    <string name="finalSolution">Коначно решење</string>
     <string name="message">Порука</string>
     <string name="greenColor">#00FF00</string>
     <string name="grayColor">"#FFE57C"</string>
@@ -84,9 +87,9 @@
     <string name="playerFirebase">player</string>
     <string name="name">Име:&#160;</string>
     <string name="lastname">Презиме:&#160;</string>
-    <string name="username">Korisnicko ime</string>
-    <string name="name_">Korisnicko Ime</string>
-    <string name="email">E-mail</string>
+    <string name="username">Корисничко име:&#160;</string>
+    <string name="name_">Име</string>
+    <string name="lastname_">Презиме</string>
     <string name="username_">Корисничко име</string>
     <string name="search">Претражи…</string>
     <string name="challenge">Изазови</string>
@@ -113,21 +116,4 @@
     <string name="buttonClickCheck">Проверите прво исправност података кликом на упитник</string>
     <string name="messagesFirebase">messages</string>
     <string name="exitGame">Излаз из игре?</string>
-
-
-    <string name="labelPassword">Password</string>
-    <string name="labelUsername">Username</string>
-    <string name="labelEmail">Email</string>
-    <string name="btnLogIn">Log in</string>
-    <string name="btnReg">Sign up</string>
-    <string name="login">Log in</string>
-    <string name="logout">Log out</string>
-    <string name="myAccount">Account</string>
-    <string name="registration">Sing up</string>
-    <string name="newPassword">New password</string>
-    <string name="password">Password</string>
-    <string name="home">Home</string>
-    <string name="text">Text</string>
-    <string name="Skocko">Skocko</string>
-    <string name="mojBroj">Moj broj</string>
 </resources>

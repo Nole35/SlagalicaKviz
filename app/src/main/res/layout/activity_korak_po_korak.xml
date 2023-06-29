@@ -1,34 +1,133 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutKorakPoKorak"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".Activities.Games.AsocijacijeGame">
 
-    <TextView
-        android:id="@+id/letters_view"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="Odgovor: " />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <EditText
-        android:id="@+id/answer_edittext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:inputType="text"
-        android:hint="Enter answer" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/check_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Check Answer" />
+            <TextView
+                style="@style/SmallHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/korak_po_korak"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/result_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="Result: " />
+            </TextView>
 
-</LinearLayout>
+            <TextView
+                android:id="@+id/textViewTimer"
+                style="@style/SmallHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:baselineAligned="false">
+
+            <Button
+                android:id="@+id/game1"
+                style="@style/ButtonStyleForGames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/field"
+                android:onClick="openField" />
+
+            <Button
+                android:id="@+id/game2"
+                style="@style/ButtonStyleForGames"
+                android:layout_width="match_parent"
+                android:enabled="false"
+                android:layout_height="wrap_content"
+                android:background="@drawable/field"
+                android:onClick="openField" />
+
+            <Button
+                android:id="@+id/game3"
+                style="@style/ButtonStyleForGames"
+                android:layout_width="match_parent"
+                android:enabled="false"
+                android:layout_height="wrap_content"
+                android:background="@drawable/field"
+                android:onClick="openField" />
+
+            <Button
+                android:id="@+id/game4"
+                style="@style/ButtonStyleForGames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:background="@drawable/field"
+                android:onClick="openField" />
+
+            <Button
+                android:id="@+id/game5"
+                style="@style/ButtonStyleForGames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:background="@drawable/field"
+                android:onClick="openField" />
+
+            <Button
+                android:id="@+id/game6"
+                style="@style/ButtonStyleForGames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:background="@drawable/field"
+                android:onClick="openField" />
+
+            <Button
+                android:id="@+id/game7"
+                style="@style/ButtonStyleForGames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:background="@drawable/field"
+                android:onClick="openField" />
+
+            <EditText
+                android:id="@+id/editText_MainSolution"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/finalSolution"
+                android:textAlignment="center"
+                android:tooltipText="@string/finalSolution"
+                tools:ignore="Autofill,TextFields" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

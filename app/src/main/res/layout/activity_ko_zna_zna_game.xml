@@ -2,9 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutKoZnaZna"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".KoZnaZna">
+    android:background="@color/backgroundColor"
+    tools:context=".Activities.Games.KoZnaZnaGame">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,6 +16,32 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/SmallHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/ko_zna_zna"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/textViewTimer"
+                style="@style/SmallHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -65,28 +93,16 @@
                 android:layout_weight="1"
                 android:onClick="tryAnswerClick" />
 
-
-
             <Button
                 android:id="@+id/button_4Game_5"
                 style="@style/ButtonStyleForGames"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="tryAnswerClick" />
-
+                android:onClick="nextQuestionClick"
+                android:text="@string/nextQuestion" />
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/button_5Game_5"
-            style="@style/ButtonStyleForGames"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="450dp"
-            android:onClick="nextQuestionClick"
-            android:text="@string/nextQuestion" />
-
 
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

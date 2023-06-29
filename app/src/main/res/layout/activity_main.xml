@@ -3,59 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/layoutMainActivity"
     android:layout_height="match_parent"
+    tools:context=".Activities.MainMenu.MainActivity"
+    android:orientation="horizontal"
     android:background="@color/backgroundColor"
-    tools:context=".MainActivity">
-
+    >
 
     <TextView
         android:id="@+id/textViewTitle1"
         style="@style/BigHeader"
-        android:layout_marginTop="120dp"
         android:text="@string/slagalica"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="6dp">
-
-        <Button
-            android:id="@+id/btnprikazKoraisnika"
-            style="@style/ButtonStyleMainMenu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="startSettings"
-            android:text="@string/prikaz"
-            tools:ignore="MissingConstraints,OnClick"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="192dp" />
-
-        <Button
-            android:id="@+id/loginbtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Login"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="182dp"
-            tools:layout_editor_absoluteY="283dp" />
-
-        <Button
-            android:id="@+id/registracijaBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Registracija"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="252dp"
-            tools:layout_editor_absoluteY="192dp" />
-
-
-    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -68,31 +29,44 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewTitle1"
         app:layout_constraintVertical_bias="0.377">
 
-    <Button
-        android:id="@+id/buttonMultiplayer"
-        style="@style/ButtonStyleMainMenu"
-        android:onClick="startMultiPlayer"
-        android:text="@string/igra"
-        tools:ignore="MissingConstraints,OnClick"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="386dp" />
+        <Button
+            android:id="@+id/buttonSingleplayer"
+            style="@style/ButtonStyleMainMenu"
+            android:onClick="startSinglePlayer"
+            android:text="@string/jedan_igra" />
 
+        <Button
+            android:id="@+id/buttonMultiplayer"
+            style="@style/ButtonStyleMainMenu"
+            android:onClick="startMultiPlayer"
+            android:text="@string/dva_igra_a" />
 
+        <Button
+            style="@style/ButtonStyleMainMenu"
+            android:onClick="startSettings"
+            android:text="@string/pode_avanja" />
 
     </LinearLayout>
 
-    <ImageView
+    <TextView
+        android:id="@+id/textViewCredits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16sp"
+        android:text="@string/powered_by_radoica_nikoli"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        android:src="@drawable/logos"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="511dp"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"/>
-
-
-
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        android:src="@drawable/slagalicarotate"
+        tools:srcCompat="@tools:sample/avatars" />
 </androidx.constraintlayout.widget.ConstraintLayout>
