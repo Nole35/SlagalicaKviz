@@ -62,7 +62,7 @@
                 style="@style/ButtonStyleMainMenu"
                 android:layout_width="50dp"
                 android:onClick="startKorakPoKorak"
-                android:text="@string/slagalica" />
+                android:text="@string/korak_po_korak" />
 
             <TextView
                 android:id="@+id/Game_1MainPlayerPoints"
@@ -243,34 +243,34 @@
                 android:textStyle="italic"/>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_gravity="center_vertical"
-            android:gravity="center"
-            android:layout_height="40dp">
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_height="40dp">-->
 
-            <Button
-                android:id="@+id/buttonGame7"
-                style="@style/ButtonStyleMainMenu"
-                android:layout_width="50dp"
-                android:layout_weight="1"
-                android:text="@string/chat" />
+<!--            <Button-->
+<!--                android:id="@+id/buttonGame7"-->
+<!--                style="@style/ButtonStyleMainMenu"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="@string/chat" />-->
 
-            <TextView
-                style="@style/SmallHeader"
+<!--            <TextView-->
+<!--                style="@style/SmallHeader"-->
 
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textStyle="italic"/>
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textStyle="italic"/>-->
 
-            <TextView
-                style="@style/SmallHeader"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textStyle="italic"/>
-        </LinearLayout>
+<!--            <TextView-->
+<!--                style="@style/SmallHeader"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textStyle="italic"/>-->
+<!--        </LinearLayout>-->
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -1,7 +1,7 @@
 package com.example.slagalica.Game;
 
 import com.example.slagalica.Activities.MainMenu.MainActivity;
-import com.example.slagalica.MultiPlayer.Message;
+//import com.example.slagalica.MultiPlayer.Message;
 import com.example.slagalica.MultiPlayer.Player;
 
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ public class Game {
     protected Player player2;
     protected ArrayList<Integer> points1;
     protected ArrayList<Integer> points2;
-    protected ArrayList<Message> messages;
+//    protected ArrayList<Message> messages;
     protected String gameId;
     protected Integer korakPoKorakNumber;
 
@@ -41,7 +41,7 @@ public class Game {
             points1.add(0);
             points2.add(0);
         }
-        messages = new ArrayList<>();
+//        messages = new ArrayList<>();
         gameId = "";
     }
 
@@ -109,7 +109,7 @@ public class Game {
     public Integer getKorakPoKOrak() {
         return korakPoKorakNumber;
     }
-    public Game(ArrayList<String> game1Letters, ArrayList<Integer> game2Numbers, ArrayList<String> game3Words, ArrayList<Integer> game4Combination, ArrayList<Integer> game5QuestionsNumbers, Integer associationNumber, Player player1, Player player2, ArrayList<Integer> points1, ArrayList<Integer> points2, ArrayList<Message> messages, String gameId) {
+    public Game(ArrayList<String> game1Letters, ArrayList<Integer> game2Numbers, ArrayList<String> game3Words, ArrayList<Integer> game4Combination, ArrayList<Integer> game5QuestionsNumbers, Integer associationNumber, Player player1, Player player2, ArrayList<Integer> points1, ArrayList<Integer> points2, String gameId) {
         this.game1Letters = game1Letters;
         this.game2Numbers = game2Numbers;
         this.game3Words = game3Words;
@@ -120,7 +120,7 @@ public class Game {
         this.player2 = player2;
         this.points1 = points1;
         this.points2 = points2;
-        this.messages = messages;
+//        this.messages = messages;
         this.gameId = gameId;
     }
 
@@ -128,13 +128,13 @@ public class Game {
         this.player1 = player1;
     }
 
-    public ArrayList<Message> getMessages() {
-        return messages;
-    }
+//    public ArrayList<Message> getMessages() {
+//        return messages;
+//    }
 
-    public void setMessages(ArrayList<Message> messages) {
-        this.messages = messages;
-    }
+//    public void setMessages(ArrayList<Message> messages) {
+//        this.messages = messages;
+//    }
 
     public Player getPlayer1() {
         return player1;

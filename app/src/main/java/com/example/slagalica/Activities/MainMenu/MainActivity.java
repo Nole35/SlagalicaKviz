@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         String color = preferences.getString(getResources().getString(R.string.backgroundColorKey), getResources().getString(R.string.color1));
         constraintLayout = findViewById(R.id.layoutMainActivity);
         constraintLayout.setBackgroundColor(Color.parseColor(color));
-        gifImageView = findViewById(R.id.gifImageView);
+//        gifImageView = findViewById(R.id.gifImageView);
         listener = new SharedPreferences.OnSharedPreferenceChangeListener() {
             @Override
             public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {

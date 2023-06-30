@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.slagalica.Activities.Chat.ChatActivity;
+//import com.example.slagalica.Activities.Chat.ChatActivity;
 import com.example.slagalica.Activities.Games.AsocijacijeGame;
 import com.example.slagalica.Activities.Games.KoZnaZnaGame;
 import com.example.slagalica.Activities.Games.KorakPoKorakGame;
@@ -151,19 +151,19 @@ public class SinglePlayerActivity extends AppCompatActivity {
             textViewsOpponentPoints.add(textViewOpponentPoints);
         }
 
-        Button buttonChat = findViewById(R.id.buttonGame7);
-        buttonChat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(SinglePlayerActivity.this, ChatActivity.class);
-                startActivity(intent);
-            }
-        });
-        if (SinglePlayerActivity.typeOfGame == TypeOfGame.SinglePlayer) {
-            buttonChat.setVisibility(View.INVISIBLE);
-        } else {
-            buttonChat.setVisibility(View.VISIBLE);
-        }
+//        Button buttonChat = findViewById(R.id.buttonGame7);
+//        buttonChat.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(SinglePlayerActivity.this, ChatActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//        if (SinglePlayerActivity.typeOfGame == TypeOfGame.SinglePlayer) {
+//            buttonChat.setVisibility(View.INVISIBLE);
+//        } else {
+//            buttonChat.setVisibility(View.VISIBLE);
+//        }
         mainPlayerSumOfPoints = findViewById(R.id.SumPointsMainPlayer);
         opponentSumOfPoints = findViewById(R.id.SumPointsOpponent);
 
