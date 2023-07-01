@@ -9,7 +9,7 @@ import com.example.slagalica.Controllers.KoZnaZnaController;
 import com.example.slagalica.Controllers.KorakPoKorakKontorler;
 import com.example.slagalica.Controllers.MojBrojController;
 import com.example.slagalica.Controllers.SkockoController;
-import com.example.slagalica.Controllers.SlagalicaController;
+//import com.example.slagalica.Controllers.SlagalicaController;
 import com.example.slagalica.Controllers.SpojniceController;
 import com.example.slagalica.Game.Game;
 
@@ -339,7 +339,7 @@ public class ResourceHelper {
     {
         Game game = new Game();
         // Game 1
-        game.setKorakPOKOrak(KorakPoKorakKontorler.getInstance().getAssociationNumber());
+        game.setKorakPoKorak(KorakPoKorakKontorler.getInstance().getAssociationNumber());
 
         // Game 2
         game.setGame2Numbers(MojBrojController.getInstance().getNumbers());

@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         String color = preferences.getString(getResources().getString(R.string.backgroundColorKey), getResources().getString(R.string.color1));
         constraintLayout = findViewById(R.id.layoutMainActivity);
         constraintLayout.setBackgroundColor(Color.parseColor(color));
-//        gifImageView = findViewById(R.id.gifImageView);
+        gifImageView = findViewById(R.id.gifImageView);
         listener = new SharedPreferences.OnSharedPreferenceChangeListener() {
             @Override
             public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         typeOfGame = 1;
         preferences.registerOnSharedPreferenceChangeListener(listener);
         preferences.edit().apply();
-//        gifImageView.setVisibility(View.INVISIBLE);
+        gifImageView.setVisibility(View.INVISIBLE);
     }
 
 
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             // If user exit from multiplayer, and then fastly goes again in multiplayer, there is a chance
             // that data in database are not updated so a little time to wait for clearing the data
-            gifImageView.setVisibility(View.VISIBLE);
+//            gifImageView.setVisibility(View.VISIBLE);
             final CountDownTimer timer = new CountDownTimer(2000, 1000) {
                 @Override
                 public void onTick(long millisUntilFinished) {

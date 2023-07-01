@@ -102,11 +102,11 @@ public class Game {
     public void setAssociationNumber(Integer associationNumber) {
         this.associationNumber = associationNumber;
     }
-    public void setKorakPOKOrak(Integer dh) {
+    public void setKorakPoKorak(Integer dh) {
         this.korakPoKorakNumber = dh;
     }
 
-    public Integer getKorakPoKOrak() {
+    public Integer getKorakPoKorak() {
         return korakPoKorakNumber;
     }
     public Game(ArrayList<String> game1Letters, ArrayList<Integer> game2Numbers, ArrayList<String> game3Words, ArrayList<Integer> game4Combination, ArrayList<Integer> game5QuestionsNumbers, Integer associationNumber, Player player1, Player player2, ArrayList<Integer> points1, ArrayList<Integer> points2, String gameId) {

@@ -60,13 +60,15 @@
 <!--        app:layout_constraintHorizontal_bias="0.954"-->
 <!--        app:layout_constraintStart_toStartOf="parent" />-->
 
-<!--    <pl.droidsonroids.gif.GifImageView-->
-<!--        android:id="@+id/gifImageView"-->
-<!--        android:layout_width="100dp"-->
-<!--        android:layout_height="100dp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"-->
-<!--        android:src="@drawable/slagalicarotate"-->
-<!--        tools:srcCompat="@tools:sample/avatars" />-->
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/slagalicarotate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:srcCompat="@tools:sample/avatars" />
 </androidx.constraintlayout.widget.ConstraintLayout>

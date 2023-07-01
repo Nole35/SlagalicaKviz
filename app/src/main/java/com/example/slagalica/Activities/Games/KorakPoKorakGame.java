@@ -75,7 +75,7 @@ public class KorakPoKorakGame extends AppCompatActivity implements GameInterface
         setButtons();
         setEditTexts();
         textViewTimer = findViewById(R.id.textViewTimer);
-        association = controller.getAssociation(SinglePlayerActivity.game.getKorakPoKOrak());
+        association = controller.getAssociation(SinglePlayerActivity.game.getKorakPoKorak());
         timer = new CountDownTimer(timeClock * 1000, clockInterval * 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
