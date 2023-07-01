@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         typeOfGame = 1;
         preferences.registerOnSharedPreferenceChangeListener(listener);
         preferences.edit().apply();
-        gifImageView.setVisibility(View.INVISIBLE);
+//        gifImageView.setVisibility(View.INVISIBLE);
     }
 
 

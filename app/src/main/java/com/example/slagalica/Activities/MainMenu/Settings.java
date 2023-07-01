@@ -21,7 +21,7 @@ import java.util.ArrayList;
 
 public class Settings extends AppCompatActivity {
 
-    public static final int[] Colors = {R.string.color11,R.string.color12};
+    public static final int[] Colors = {R.string.color1,R.string.color2,R.string.color3,R.string.color4,R.string.color5,R.string.color6,R.string.color7,R.string.color8,R.string.color9,R.string.color10,R.string.color11,R.string.color12};
     private ArrayList<Button> buttons;
     public static final String gameName = "Settings";
     private ConstraintLayout constraintLayout;
